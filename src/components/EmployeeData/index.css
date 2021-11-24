@@ -1,0 +1,206 @@
+* {
+  font-family: Roboto;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f24545;
+}
+
+.main {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 99.6vw;
+  min-height: 100vh;
+  border-bottom: 0.5vh solid #f24545;
+  border-top: 0.5vh solid #f24545;
+}
+.formCard {
+  max-width: 400px;
+  width: 90vw;
+  border-radius: 15px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.4);
+  padding: 30px 30px 15px 30px;
+  background-color: #ffffff;
+}
+.heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.mandatory::after {
+  content: ' *';
+  color: #f24545;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 12px;
+  color: gray;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #f24545;
+  outline: none;
+  height: 25px;
+  margin-top: 5px;
+}
+.dataCon {
+  margin-top: 15px;
+}
+.skillsCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dynamicSkills {
+  width: 40%;
+}
+#skills {
+  width: 100%;
+}
+.numberCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  width: 100%;
+}
+.dynamicContacts {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.dynamicButtonCon {
+  position: relative;
+}
+
+.plus,
+.minus {
+  border: 1.5px solid #f24545;
+  outline: none;
+  background-color: #ffffff;
+  color: #f24545;
+  padding: 3px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 250ms;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+}
+@media (min-width: 876px) {
+  .plus:hover,
+  .minus:hover {
+    background-color: #f24545;
+    color: #ffffff;
+  }
+  .plus:hover::after,
+  .minus:hover::after {
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    background-color: #f24545;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+  }
+  .plus:hover::after {
+    content: 'Add New Field';
+  }
+  .minus:hover::after {
+    content: 'Delete Field';
+  }
+}
+
+#number,
+#type {
+  width: 45%;
+}
+
+.submitBtn {
+  background-color: #f24545;
+  color: #fff;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.dataBtn {
+  border: 1px solid gray;
+  cursor: not-allowed;
+  outline: none;
+  padding: 5px 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: gray;
+}
+.dataBtnColor {
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #f24545;
+}
+.employeeDataCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+.employeeDataCard {
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 10px;
+  border-top: 3px solid #f24545;
+  border-bottom: 3px solid #f24545;
+  min-width: 150px;
+  /* border-radius: 20px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  line-height: 1;
+}
+.tag {
+  background: #f24545;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+}
